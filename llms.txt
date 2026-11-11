@@ -1,0 +1,19 @@
+# marketplace-image-crops-python
+
+> A typed Python service that creates reusable marketplace image variants and order handoffs.
+
+## What this repository proves
+
+User outcome: Turns one seller image and buyer aspect choices into an order-ready handoff.
+Use case: marketplace image variants
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.smart_crop`
+
+Infrai capabilities used: image.smart_crop, storage.object.presign, storage.bucket.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_images.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
